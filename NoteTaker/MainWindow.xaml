@@ -5,8 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NoteTaker"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Note Taker" Height="600" Width="400">
+    
     <Grid>
-        
+        <StackPanel>
+            <TextBlock FontSize="35" Text="Your Notes..." />
+            <TabControl>
+                <TabItem Header="General">
+                    <Label Content="Content goes here..." />
+                </TabItem>
+                <TabItem Header="To Do" />
+                <TabItem Header="Medical" />
+            </TabControl>
+        </StackPanel>
     </Grid>
 </Window>
